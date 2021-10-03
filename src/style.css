@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap");
+.primary-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem; }
+
+.task__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #4557F3; }
+
+.todolist__notepad {
+  background-color: #FFFFFF;
+  margin: 10rem auto;
+  box-shadow: 0 2rem 1rem 0 rgba(0, 0, 0, 0.2);
+  width: 48rem;
+  min-height: 30rem;
+  height: auto;
+  border-radius: 40px; }
+  .todolist__notepad__task-list ul {
+    list-style: none;
+    width: 90%;
+    margin-top: 5rem;
+    margin-left: 5%; }
+    .todolist__notepad__task-list ul li:last-child {
+      margin-bottom: 3rem; }
+  .todolist__notepad__heading {
+    padding-top: 5rem;
+    background-color: transparent;
+    display: block;
+    margin: 2rem auto;
+    max-width: 50%; }
+    .todolist__notepad__heading .primary-heading {
+      padding: 1rem 0;
+      text-align: center;
+      color: #4557F3;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+  .todolist__notepad .todolist__add-task {
+    width: 34rem;
+    height: 5.5rem;
+    margin: 0rem auto;
+    top: -1rem;
+    position: relative;
+    background: #F7F8FF;
+    border: 1px solid #E9E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 1.4rem; }
+    .todolist__notepad .todolist__add-task input {
+      background-color: transparent;
+      border: none;
+      width: 28rem;
+      height: 5.5rem;
+      margin-left: 2rem; }
+      .todolist__notepad .todolist__add-task input:focus {
+        outline: none; }
+    .todolist__notepad .todolist__add-task button {
+      font-size: 3rem;
+      text-align: center;
+      margin: auto 0;
+      font-weight: 300;
+      color: #4557F3;
+      position: relative;
+      width: 3.6rem;
+      height: 3.6rem;
+      background-color: #F3F4FE;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 9rem;
+      border: none;
+      left: -1rem;
+      top: 0.5rem;
+      transition: all .3s; }
+      .todolist__notepad .todolist__add-task button:active {
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #F9FAFF;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) /3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) +  2 * 6rem); }
+
+.task {
+  position: relative;
+  border-radius: 3px;
+  width: 37rem;
+  height: 6rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1.4rem;
+  background-color: #F5F6FF;
+  margin: 0 auto;
+  transition: all .2s;
+  margin-bottom: 1rem; }
+  .task__checkbox {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .task__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .task__delete {
+    color: #4557F3;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-style: none;
+    box-shadow: 0.2rem 0.5rem 0.4rem 0 rgba(0, 0, 0, 0.2); }
+    .task__delete:active {
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.checkbox {
+  -webkit-appearance: none;
+  border: 1px solid #EBE5E5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 9px;
+  border-radius: 9rem;
+  display: inline-block;
+  position: relative; }
+  .checkbox:checked {
+    background-color: #e9ecee; }
+    .checkbox:checked:after {
+      content: '\2714';
+      font-size: 2rem;
+      font-weight: 300;
+      position: absolute;
+      top: -0.7rem;
+      left: 0;
+      color: #4557F3; }
+
+.checked {
+  text-decoration:line-through;
+  font-style: italic
+}
